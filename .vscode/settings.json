@@ -23,5 +23,5 @@
   },
   "[typescriptreact]": {
     "editor.formatOnSave": true
-  },
+  }
 }
