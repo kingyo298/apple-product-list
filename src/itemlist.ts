@@ -7,7 +7,7 @@ interface itemList {
   [category: string]: item[];
 }
 const itemlist: itemList = {
-  Mac: [
+  MacBook: [
     {
       title: 'MacBook Air',
       imgUrl:

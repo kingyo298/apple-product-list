@@ -12,12 +12,14 @@ interface category {
 }
 const Category: React.VFC<category> = (props) => {
   return (
-    <>
-      <p>{props.category}</p>
-      {props.items.map((item, index) => (
-        <Item item={item} key={index} />
-      ))}
-    </>
+    <div className="border border-2 rounded-xl p-16 shadow-lg">
+      <p className="mb-8 text-2xl">{props.category}</p>
+      <div className="w-full flex gap-8 overflow-x-auto snap-x scroll-px-6 py-20">
+        {props.items.map((item, index) => (
+          <Item item={item} key={index} />
+        ))}
+      </div>
+    </div>
   );
 };
 export default Category;
