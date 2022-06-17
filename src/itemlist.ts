@@ -1,4 +1,12 @@
-const itemlist = {
+interface item {
+  title: string;
+  imgUrl: string;
+  price: number;
+}
+interface itemList {
+  [category: string]: item[];
+}
+const itemlist: itemList = {
   Mac: [
     {
       title: 'MacBook Air',
